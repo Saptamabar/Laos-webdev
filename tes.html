@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide List</title>
+    <style>
+        /* CSS di sini */
+        #myList {
+            display: none; /* Sembunyikan daftar secara default */
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleList()">Show/Hide List</button>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <script>
+        // JavaScript di sini
+        function toggleList() {
+            var list = document.getElementById("myList");
+            if (list.style.display === "none") {
+                list.style.display = "block";
+            } else {
+                list.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
