@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman dengan Navigasi</title>
+    <title>Halaman video pembelajaran</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         .navbar {
             background-color: #333;
@@ -27,49 +30,75 @@
             color: black;
         }
         .container {
-            display: flex; /* Menggunakan Flexbox untuk tata letak horizontal */
-            justify-content: space-around; /* Menyebar ruang antar elemen */
-            padding: 20px;
+            display: flex;
+            flex: 1;
+            height: calc(100vh - 56px);
         }
-        .section {
-            flex: 1; /* Membuat setiap section mengambil ruang yang sama */
-            margin: 0 10px; /* Menambahkan margin antar section */
+        .sidebar {
+            background-color: #f1f1f1;
+            padding: 20px;
+            overflow-y: auto;
+            resize: horizontal;
+            width: 300px;
+            min-width: 150px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar h1 {
+            margin-top: 0;
         }
         .semester-controls {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin: 20px 0;
+            align-items: center;
+            margin-bottom: 10px;
         }
         .semester-controls button {
-            padding: 10px;
-            margin: 0 10px;
+            padding: 5px 10px;
+            margin: 0 5px;
             cursor: pointer;
         }
-        .semester-controls span {
-            font-size: 1.5em;
+        #courseButtons {
+            display: flex;
+            flex-direction: column;
         }
-        #myList, #myList2 {
-            display: none;
+        #courseButtons button {
+            text-align: left;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        #courseButtons button:hover {
+            background-color: #e0e0e0;
+        }
+        .topic-list {
             list-style-type: none;
             padding: 0;
             margin: 10px 0 0 0;
+            display: none; /* Sembunyikan daftar topik secara default */
         }
-        #myList li, #myList2 li {
+        .topic-list li {
             padding: 8px;
             background-color: #f9f9f9;
             border: 1px solid #ddd;
             margin-top: 5px;
-            cursor: pointer; /* Menambahkan kursor pointer */
+            cursor: pointer;
         }
-        #myList li:hover, #myList2 li:hover {
-            background-color: #e0e0e0; /* Efek hover */
+        .topic-list li:hover {
+            background-color: #e0e0e0;
         }
-        .video-section {
+        .main-content {
+            flex: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .video-section {
+            width: 100%;
+            max-width: 800px;
         }
     </style>
 </head>
@@ -82,68 +111,184 @@
     </div>
 
     <div class="container">
-        <div class="section">
-            <h1>Daftar dan Kontrol Semester</h1>
+        <div class="sidebar">
+            <h1>Daftar mata kuliah</h1>
             <div class="semester-controls">
-                <div>
-                    <button onclick="changeSemester(-1)">-</button>
-                    <span id="semester">Semester 1</span>
-                    <button onclick="changeSemester(1)">+</button>
-                </div>
-                <div>
-                    <button onclick="toggleList('myList')">Show/Hide List</button>
-                    <ul id="myList">
-                        <li onclick="listItemClicked('Pengenalan Python')">Pengenalan Python</li>
-                        <li onclick="listItemClicked('Variabel')">Variabel</li>
-                        <li onclick="listItemClicked('Tipe Data')">Tipe Data</li>
-                    </ul>
-                </div>
-                <div>
-                    <button onclick="toggleList('myList2')">Show List 2</button>
-                    <ul id="myList2">
-                        <li onclick="listItemClicked('Pengenalan Python')">Pengenalan Python</li>
-                        <li onclick="listItemClicked('Variabel')">Variabel</li>
-                        <li onclick="listItemClicked('Tipe Data')">Tipe Data</li>
-                    </ul>
-                </div>
+                <button onclick="changeSemester(-1)">-</button>
+                <span id="semester">Semester 1</span>
+                <button onclick="changeSemester(1)">+</button>
+            </div>
+            <div id="courseButtons">
+                <!-- Tombol mata kuliah akan diisi di sini -->
             </div>
         </div>
 
-        <div class="section video-section">
-            <h1>Video</h1>
-            <video width="600" controls>
-                <source src="https://drive.google.com/uc?id=FILE_ID" type="video/mp4">
-                Browser Anda tidak mendukung tag video.
-            </video>
+        <div class="main-content">
+            <div class="video-section">
+                <h1>Video</h1>
+                <video id="videoPlayer" width="100%" controls>
+                    <source id="videoSource" src="" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+            </div>
         </div>
     </div>
 
     <script>
         let semester = 1;
+
+        // Data untuk setiap semester
+        const semesterData = {
+            1: {
+                courses: {
+                    "Algoritma dan Pemrogaman 1": [
+                        {title: "Pengenalan Python", video: ""},
+                        {title: "Tipe Data dan Variabel", video: ""},
+                        {title: "Tipe Data Sequential", video: ""},
+                        {title: "Operasi Aritmatika", video: ""},
+                        {title: "Perkondisian", video: ""},
+                        {title: "Looping", video: ""},
+                        {title: "Function dan File Handling", video: ""},
+                        {title: "Data Handling", video: ""},
+                        {title: "Pandas", video: ""}
+                    ],
+                    "Etika Profesi": [
+                        {title: "Etika", video: ""},
+                        {title: "Profesi di Bidang IT", video: ""},
+                        {title: "Kode Etik Profesi", video: ""},
+                        {title: "Sertifikasi di Bidang IT", video: ""},
+                        {title: "Cyber Ethic", video: ""},
+                        {title: "Etika Bisnis", video: ""},
+                        {title: "UU ITE", video: ""},
+                        {title: "Paten dan Hak Cipta", video: ""},
+                        {title: "Cyber Crime", video: ""},
+                        {title: "IT Forensic", video: ""}
+                    ],
+                    "Matematika Dasar": [],
+                    "Prinsip Organisasi dan Manajemen": [],
+                    "Bahasa Inggris": [],
+                    "Dasar-dasar Sistem Informasi": [],
+                    "Interaksi Manusia dan Komputer": [],
+                    "Pendidikan Pancasila": [],
+                    "Pendidikan Agama Islam": []
+                }
+            },
+            2: {
+                courses: {
+                    "Algoritma dan Pemrograman II": [
+                        {title: "Rekursif dan Palindrom", video: ""},
+                        {title: "Brute Force", video: ""},
+                        {title: "Searching", video: ""},
+                        {title: "Sorting", video: ""},
+                        {title: "Divide and Conquer", video: ""},
+                        {title: "Knapsack Problem", video: ""},
+                        {title: "Spanning Tree", video: ""},
+                        {title: "Maze Problem", video: ""}
+                    ],
+                    "Pengantar Rekayasa Perangkat Lunak": [],
+                    "Jaringan Komputer": [],
+                    "Matematika Diskrit": [],
+                    "Sistem Basis Data": [
+                        {title: "Konsep Database", video: ""},
+                        {title: "Entity", video: ""},
+                        {title: "ERD", video: ""},
+                        {title: "ERD 2", video: ""},
+                        {title: "Normalisasi", video: ""},
+                        {title: "DDL", video: ""},
+                        {title: "Serba Serbi Database", video: ""},
+                        {title: "Serba Serbi Database 2", video: ""},
+                        {title: "Select", video: ""},
+                        {title: "Where", video: ""},
+                        {title: "Join", video: ""},
+                        {title: "Join 2", video: ""},
+                        {title: "Group By", video: ""},
+                        {title: "Group By 2", video: ""}
+                    ],
+                    "Bahasa Indonesia": [],
+                    "Arsitektur Komputer": [],
+                    "Teori Graf": [],
+                    "Manajemen dan Kewirausahaan": []
+                }
+            },
+            3: {
+                courses: {
+                    "Metodologi Penelitian": [],
+                    "Riset Operasi": [],
+                    "Pengantar Kecerdasan Buatan": [],
+                    "Object Oriented Design": [],
+                    "Analisa dan Perancangan Sistem": [],
+                    "Analitik dan Visualisasi Data": [],
+                    "Manajemen Keamanan Sistem Informasi": [],
+                    "Pemrograman Berorientasi Obyek": []
+                }
+            }
+        };
+
+
         function changeSemester(change) {
             semester += change;
             if (semester < 1) semester = 1;
+            if (semester > Object.keys(semesterData).length) semester = Object.keys(semesterData).length;
             document.getElementById("semester").innerText = "Semester " + semester;
+            updateButtons();
         }
 
-        function toggleList(listId) {
-            const list = document.getElementById(listId);
-            const otherList = listId === 'myList' ? document.getElementById('myList2') : document.getElementById('myList');
+        function updateButtons() {
+            const courseNames = Object.keys(semesterData[semester].courses);
+            const courseButtonsContainer = document.getElementById("courseButtons");
+            courseButtonsContainer.innerHTML = "";
 
-            // Sembunyikan daftar lainnya
-            otherList.style.display = 'none';
+            courseNames.forEach(courseName => {
+                const button = document.createElement("button");
+                button.innerText = courseName;
+                button.onclick = () => toggleTopics(semesterData[semester].courses[courseName], button);
+                courseButtonsContainer.appendChild(button);
+            });
+        }
 
-            // Tampilkan atau sembunyikan daftar yang dipilih
-            if (list.style.display === "none" || list.style.display === "") {
-                list.style.display = "block";
+        function toggleTopics(topics, button) {
+            const existingList = button.nextElementSibling; // Mendapatkan daftar topik setelah tombol
+            const allLists = document.querySelectorAll('.topic-list'); // Mendapatkan semua daftar topik
+            
+            // Sembunyikan semua daftar topik
+            allLists.forEach(list => {
+                if (list !== existingList) {
+                    list.style.display = 'none';
+                }
+            });
+
+            if (existingList && existingList.classList.contains('topic-list')) {
+                // Jika daftar topik sudah ada, toggle daftar tersebut
+                existingList.style.display = existingList.style.display === 'block' ? 'none' : 'block';
             } else {
-                list.style.display = "none";
+                // Buat daftar topik baru
+                const list = document.createElement("ul");
+                list.className = "topic-list";
+                topics.forEach(item => {
+                    const li = document.createElement("li");
+                    li.textContent = item.title;
+                    li.onclick = () => listItemClicked(item.video);
+                    list.appendChild(li);
+                });
+
+                // Menyisipkan daftar topik ke bawah tombol mata kuliah
+                button.parentNode.insertBefore(list, button.nextSibling);
+                list.style.display = "block"; // Tampilkan daftar topik
             }
         }
 
-        function listItemClicked(item) {
-            alert("Anda memilih: " + item);
+        function updateVideo(videoSrc) {
+            const videoSource = document.getElementById("videoSource");
+            videoSource.src = videoSrc;
+            document.getElementById("videoPlayer").load();
         }
+
+        function listItemClicked(videoSrc) {
+            updateVideo(videoSrc); // Update video ketika materi dipilih
+        }
+
+        updateButtons(); // Memperbarui tombol mata kuliah
+        updateVideo(""); // Memperbarui video saat halaman pertama kali dimuat
     </script>
 
 </body>
