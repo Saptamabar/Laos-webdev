@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman PPT Pembelajaran</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="Stylemateri.css">
 </head>
 <body>
 
@@ -18,10 +19,10 @@
         <div class="sidebar">
             <h1>Daftar mata kuliah</h1>
             <div class="semester-controls">
-                <button onclick="changeSemester(-1)">-</button>
+                <button onclick="changeSemester(-1)" class="arrow-button">&#9664;</button> <!-- Panah kiri -->
                 <span id="semester">Semester 1</span>
-                <button onclick="changeSemester(1)">+</button>
-            </div>
+                <button onclick="changeSemester(1)" class="arrow-button">&#9654;</button> <!-- Panah kanan -->
+            </div>            
             <div id="courseButtons">
                 <!-- Tombol mata kuliah akan diisi di sini -->
             </div>
@@ -29,7 +30,6 @@
 
         <div class="main-content">
             <div class="ppt-section">
-                <h1>PPT</h1>
                 <iframe id="pptFrame" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>

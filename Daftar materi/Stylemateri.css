@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 56px);
+}
+
+.sidebar {
+    background-color: #f1f1f1;
+    padding: 20px;
+    overflow-y: auto;
+    width: 300px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    resize: horizontal;
+    border: 2px solid var(--primary-color); /* Batas sidebar */
+    border-radius: 5px; /* Sudut membulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+.sidebar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 5px;
+    cursor: ew-resize;
+    background-color: transparent;
+}
+
+.sidebar h1 {
+    margin-top: 0;
+}
+
+.semester-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Jarak antara teks "Semester" dan tombol */
+}
+
+.semester-controls span {
+    margin: 0 10px; /* Jarak antara teks "Semester" dan tombol */
+    font-weight: 700; /* Menambah ketebalan font untuk teks semester */
+}
+
+.semester-controls button {
+    padding: 5px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    font-size: 16px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.semester-controls button:hover {
+    background-color: var(--accent-color);
+}
+
+#courseButtons {
+    display: flex;
+    flex-direction: column; /* Daftar mata kuliah disusun ke bawah */
+    gap: 10px; /* Jarak antar tombol */
+}
+
+#courseButtons button {
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    background-color: #f9f9f9;
+    border-radius: 5px; /* Sudut membulat */
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", sans-serif; /* Konsistensi font */
+    font-size: 16px; /* Ukuran font */
+    font-weight: 400; /* Ketebalan font */
+}
+
+#courseButtons button:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+.topic-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: none; /* Sembunyikan daftar topik secara default */
+}
+
+.topic-list li {
+    padding: 10px; /* Konsistensi padding dengan tombol daftar mata kuliah */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", sans-serif; /* Konsistensi font */
+    font-size: 16px; /* Ukuran font */
+    font-weight: 400; /* Ketebalan font */
+    border-radius: 5px; /* Sudut membulat */
+}
+
+.topic-list li:hover {
+    background-color: #e0e0e0;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ppt-section {
+    width: 100%;
+    max-width: 800px;
+    height: 450px; /* Ukuran tinggi iframe */
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
