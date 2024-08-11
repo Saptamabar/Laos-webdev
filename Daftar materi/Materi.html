@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman PPT Pembelajaran</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="Materi.html">Daftar Materi</a>
+        <a href="#about-us">About Us</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h1>Daftar mata kuliah</h1>
+            <div class="semester-controls">
+                <button onclick="changeSemester(-1)">-</button>
+                <span id="semester">Semester 1</span>
+                <button onclick="changeSemester(1)">+</button>
+            </div>
+            <div id="courseButtons">
+                <!-- Tombol mata kuliah akan diisi di sini -->
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="ppt-section">
+                <h1>PPT</h1>
+                <iframe id="pptFrame" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
