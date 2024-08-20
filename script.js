@@ -50,8 +50,10 @@ function loadComments() {
         .then(data => {
             let commentsList = document.getElementById('commentsList');
             commentsList.innerHTML = '';
+            
+            let reversedComments = data.comments.reverse();
 
-            data.comments.forEach(function(comment) {
+            reversedComments.forEach(function(comment) {
                 let commentItem = document.createElement('li');
 
                 let commentName = document.createElement('div');
