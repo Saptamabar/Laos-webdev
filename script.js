@@ -18,6 +18,7 @@ document.getElementById('submitComment').addEventListener('click', function() {
 
 function sendCommentToApi(commentData) {
     fetch('https://script.google.com/macros/s/AKfycbxcph7Te628Fmf0AsQhaVISEQfelUZ80BdR6KAYjMPjOjSieBmPPf_QAKKxG9vlFNNtuw/exec', {  // Ganti dengan URL Web App yang benar
+        mode: 'no-cors',
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
