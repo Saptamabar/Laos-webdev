@@ -46,6 +46,7 @@
     text-align: center; /* Center the text */
     margin: 50px auto; /* Center the container */
     max-width: 80%; /* Optional: Limit the width */
+    padding: 50px;
 }
 .centered-content h1 {
     font-size: 2em;
@@ -56,4 +57,117 @@
     margin: 0 auto; /* Center the paragraph */
     max-width: 600px; /* Set the maximum width for the paragraph */
     line-height: 1.6; /* Improve readability */
+}
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+/* Individual Card */
+.card {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 30%;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Konten dimulai dari atas */
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 80px;
+}
+
+.card p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+/* Team Container */
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/* Team Card */
+.team-card {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 30%; /* Sesuaikan dengan kartu di Solution */
+    height: 300px; /* Sesuaikan dengan kartu di Solution */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-card img {
+    width: 80px; /* Sesuaikan ukuran gambar */
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Beri jarak antara gambar dan teks */
+    object-fit: cover;
+    align-self: center; /* Posisikan gambar di tengah secara horizontal */
+}
+
+.team-info {
+    text-align: center; /* Pusatkan teks */
+}
+
+.team-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-info p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+/* Additional Content */
+.additional-content {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.additional-content p {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+
+/* CTA Button */
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Warna sedikit lebih gelap saat hover */
 }

@@ -1,0 +1,78 @@
+.container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-sizing: border-box; /* Agar padding tidak mempengaruhi ukuran total */
+    resize: none; /* Menonaktifkan kemampuan resize */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+#commentsSection {
+    margin-top: 20px;
+}
+
+#commentsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#commentsList li {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#nameInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-sizing: border-box; /* Agar padding tidak mempengaruhi ukuran total */
+}
+
+#commentsList li {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+.comment-name {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.comment-text {
+    margin-left: 15px;
+}
+

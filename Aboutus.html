@@ -5,14 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman PPT Pembelajaran</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aboutus.css">
 </head>
 <body>
 
     <div class="navbar">
         <a href="index.html">Home</a>
-        <a href="Daftarmateri\Materi.html">Daftar Materi</a>
+        <a href="Daftarmateri/Materi.html">Daftar Materi</a>
         <a href="Aboutus.html">About Us</a>
     </div>
 
+    <div class="container">
+        <h2>Kolom Komentar</h2>
+        <input type="text" id="nameInput" placeholder="Nama Anda">
+        <textarea id="commentInput" placeholder="Tulis komentar Anda di sini..."></textarea>
+        <button id="submitComment">Kirim Komentar</button>
+    
+        <div id="commentsSection">
+            <h3>Komentar:</h3>
+            <ul id="commentsList"></ul>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
 </body>
-</head>
+</html>
