@@ -17,14 +17,19 @@ document.getElementById('submitComment').addEventListener('click', function() {
 });
 
 function sendCommentToApi(commentData) {
-    fetch('https://script.googleusercontent.com/macros/echo?user_content_key=JVOMzD2Ys5Nfl_gbrrz3TmbbtXVC8mNaPfFph_oi0zgzmvrUdx04Z9fiHATyHWepkO1Moabwe60OnOylFn_lty9On256Z2hYm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnFvRNOdiby_HrUyPlD2D3sHQt93idbqJTPDy-RGqyDonqeZt4UdJKWg-W_bkwty_vsbbOyyUvNFqMLbLGNSJV8ptb4_rtiTZgQ&lib=M3BV_JfkCOKUIJEGFZkePBuzzWc9fmsux', {  // Ganti dengan URL Web App yang baru
+    fetch('https://script.google.com/macros/s/AKfycbxcph7Te628Fmf0AsQhaVISEQfelUZ80BdR6KAYjMPjOjSieBmPPf_QAKKxG9vlFNNtuw/exec', {  // Ganti dengan URL Web App yang benar
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(commentData)
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
     .then(data => {
         if (data.success) {
             loadComments(); // Fungsi ini untuk memuat ulang komentar setelah berhasil
@@ -34,8 +39,13 @@ function sendCommentToApi(commentData) {
 }
 
 function loadComments() {
-    fetch('https://script.googleusercontent.com/macros/echo?user_content_key=JVOMzD2Ys5Nfl_gbrrz3TmbbtXVC8mNaPfFph_oi0zgzmvrUdx04Z9fiHATyHWepkO1Moabwe60OnOylFn_lty9On256Z2hYm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnFvRNOdiby_HrUyPlD2D3sHQt93idbqJTPDy-RGqyDonqeZt4UdJKWg-W_bkwty_vsbbOyyUvNFqMLbLGNSJV8ptb4_rtiTZgQ&lib=M3BV_JfkCOKUIJEGFZkePBuzzWc9fmsux')
-        .then(response => response.json())
+    fetch('https://script.google.com/macros/s/AKfycbxcph7Te628Fmf0AsQhaVISEQfelUZ80BdR6KAYjMPjOjSieBmPPf_QAKKxG9vlFNNtuw/exec')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
             let commentsList = document.getElementById('commentsList');
             commentsList.innerHTML = '';
@@ -58,7 +68,6 @@ function loadComments() {
         })
         .catch(error => console.error('Error:', error));
 }
-
 
 // Load comments saat halaman di-load
 window.onload = loadComments;
