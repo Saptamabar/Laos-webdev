@@ -55,7 +55,7 @@ let semester = 1;
                         {title: "Konsep Database", ppt: "https://docs.google.com/presentation/d/e/2PACX-1vQjw4wzlLirya_AHUPWLbGPTxAdhIYQNV-vsUPYlhclzdVF5X7uiqCEVPq5W7Dis-GNQA-gzRKOq9t0/embed?start=false&loop=false&delayms=30000"},
                         {title: "Menyimpan data dalam struktur tabel", ppt: "https://docs.google.com/presentation/d/e/2PACX-1vQCDHX6l2t9CxNMJO9KNzCuzPbOLOzkr2QJ57nCbYUnNoJYUomvKYSfqjf-nTA0bg/embed?start=false&loop=false&delayms=60000"},
                         {title: "Entity", ppt: "https://docs.google.com/presentation/d/e/2PACX-1vR4BnCfaULlcG6AFrrcHSjvQlVxeNr8-EgPqxl630oHy5sfKL8zCaRf9JnLAPF_RQ/embed?start=false&loop=false&delayms=3000"},
-                        {title: "ERD 2", ppt: ""},
+                        {title: "ERD 2", ppt: "https://docs.google.com/presentation/d/1G-dB3KKOclbVZhcMV64qp79ONPPIussw/embed?start=false&loop=false&delayms=3000"},
                         {title: "Normalisasi", ppt: "skafasd"},
                         {title: "DDL", ppt: ""},
                         {title: "Serba Serbi Database", ppt: ""},
