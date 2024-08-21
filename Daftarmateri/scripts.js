@@ -5,35 +5,49 @@ let semester = 1;
             1: {
                 courses: {
                     "Algoritma dan Pemrogaman 1": [
-                        {title: "Pengenalan Python", ppt: ""},
-                        {title: "Tipe Data dan Variabel", ppt: ""},
-                        {title: "Tipe Data Sequential", ppt: ""},
-                        {title: "Operasi Aritmatika", ppt: ""},
-                        {title: "Perkondisian", ppt: ""},
-                        {title: "Looping", ppt: ""},
-                        {title: "Function dan File Handling", ppt: ""},
-                        {title: "Data Handling", ppt: ""},
-                        {title: "Pandas", ppt: ""}
+                        {title: "Pengenalan Python", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Tipe Data dan Variabel", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Tipe Data Sequential", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Operasi Aritmatika", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Perkondisian", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Looping", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Function dan File Handling", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Data Handling", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Pandas", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
                     ],
                     "Etika Profesi": [
-                        {title: "Etika", ppt: ""},
-                        {title: "Profesi di Bidang IT", ppt: ""},
-                        {title: "Kode Etik Profesi", ppt: ""},
-                        {title: "Sertifikasi di Bidang IT", ppt: ""},
-                        {title: "Cyber Ethic", ppt: ""},
-                        {title: "Etika Bisnis", ppt: ""},
-                        {title: "UU ITE", ppt: ""},
-                        {title: "Paten dan Hak Cipta", ppt: ""},
-                        {title: "Cyber Crime", ppt: ""},
-                        {title: "IT Forensic", ppt: ""}
+                        {title: "Etika", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Profesi di Bidang IT", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Kode Etik Profesi", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Sertifikasi di Bidang IT", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Cyber Ethic", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Etika Bisnis", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "UU ITE", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Paten dan Hak Cipta", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Cyber Crime", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"},
+                        {title: "IT Forensic", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
                     ],
-                    "Matematika Dasar": [],
-                    "Prinsip Organisasi dan Manajemen": [],
-                    "Bahasa Inggris": [],
-                    "Dasar-dasar Sistem Informasi": [],
-                    "Interaksi Manusia dan Komputer": [],
-                    "Pendidikan Pancasila": [],
-                    "Pendidikan Agama Islam": []
+                    "Matematika Dasar": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Prinsip Organisasi dan Manajemen": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Bahasa Inggris": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Dasar-dasar Sistem Informasi": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Interaksi Manusia dan Komputer": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Pendidikan Pancasila": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Pendidikan Agama Islam": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ]
                 }
             },
             2: {
@@ -49,33 +63,47 @@ let semester = 1;
                         {title: "Spanning Tree", ppt: "https://docs.google.com/presentation/d/1Hy9z0rD7Q7olIo_c_BsPBhl5p4kwPgsI/embed?start=false&loop=false&delayms=3000"},
                         {title: "BFS dan DFS", ppt: "https://docs.google.com/presentation/d/14Ptfn94dvttHnPZGLE86_r9RuVpV2yAy/embed?start=false&loop=false&delayms=3000"}
                     ],
-                    "Pengantar Rekayasa Perangkat Lunak": [],
-                    "Jaringan Komputer": [],
-                    "Matematika Diskrit": [],
+                    "Pengantar Rekayasa Perangkat Lunak": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Jaringan Komputer": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Matematika Diskrit": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
                     "Sistem Basis Data": [
                         {title: "Konsep Database", ppt: "https://docs.google.com/presentation/d/e/2PACX-1vQjw4wzlLirya_AHUPWLbGPTxAdhIYQNV-vsUPYlhclzdVF5X7uiqCEVPq5W7Dis-GNQA-gzRKOq9t0/embed?start=false&loop=false&delayms=30000"},
                         {title: "Menyimpan data dalam struktur tabel", ppt: "https://docs.google.com/presentation/d/145DmQoS07GXylmnCd5rrc7LSl8pyCdIS/embed?start=false&loop=false&delayms=3000"},
                         {title: "Entity", ppt: "https://docs.google.com/presentation/d/e/2PACX-1vR4BnCfaULlcG6AFrrcHSjvQlVxeNr8-EgPqxl630oHy5sfKL8zCaRf9JnLAPF_RQ/embed?start=false&loop=false&delayms=3000"},
-                        {title: "Relationship", ppt: "https://docs.google.com/presentation/d/1evuQvrVcsZM-uoxNWgCBgUV_u0Ki-37d/embed?start=false&loop=false&delayms=3000"},
-                        {title: "ERD", ppt: "https://docs.google.com/presentation/d/1WAGBToV4QDR-9S_xwC2ww4d8W7yzdyXX/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Relationship", ppt: ""},
+                        {title: "ERD", ppt: ""},
                         {title: "ERD 2", ppt: "https://docs.google.com/presentation/d/1G-dB3KKOclbVZhcMV64qp79ONPPIussw/embed?start=false&loop=false&delayms=3000"},
                         {title: "Normalisasi", ppt: "https://docs.google.com/presentation/d/18GhXGyD7lDN5ssL9nc2WG9KAlwNfOtIx/embed?start=false&loop=false&delayms=3000"},
-                        {title: "Pemetaan ERD ke Physical Design dan ke Database", ppt: "https://docs.google.com/presentation/d/1Hcy7QJx1ibC7XsEYrbdVqSSBGFP_fasA/embed?start=false&loop=false&delayms=3000"},
-                        {title: "DDL", ppt: "https://docs.google.com/presentation/d/11ekZEgjuLDHzEDB_XTw4TDQJQLc0pJ1t/embed?start=false&loop=false&delayms=3000"},
-                        {title: "Serba Serbi Database", ppt: "https://docs.google.com/presentation/d/103uhBSkkUCaTRv_AUyF3WkDU-J0bsOGW/embed?start=false&loop=false&delayms=3000"},
-                        {title: "Serba Serbi Database 2", ppt: "https://docs.google.com/presentation/d/1NGjRQnd0sXhd2tj8_Zwl3DfA0lS3SHBG/embed?start=false&loop=false&delayms=3000"},
-                        {title: "Select", ppt: "https://docs.google.com/presentation/d/1ZWu_lYva1Ine47yUJzaZpVpbo473DXxn/embed?start=false&loop=false&delayms=3000"},
-                        {title: "Where", ppt: "https://docs.google.com/presentation/d/1TY4op07aS4gHk1QdC8PW8VwkG9uYsD-C/embed?start=false&loop=false&delayms=3000"},
-                        {title: "Join", ppt: "https://docs.google.com/presentation/d/1NYQ5HPrYaFZsNX0OEopI-c7Pma9vtznO/embed?start=false&loop=false&delayms=3000"},
-                        {title: "Fungsi Aggregat", ppt:"https://docs.google.com/presentation/d/1uHgE5UVgVTKeXyP2vTB9Qu9E9w4WB-eY/embed?start=false&loop=false&delayms=3000"},
-                        {title: "Join 2", ppt: "https://docs.google.com/presentation/d/1zeEVwLztv--FILjvSGEan_hzPGoIqg5e/embed?start=false&loop=false&delayms=3000"},
-                        {title: "Group By", ppt: "https://docs.google.com/presentation/d/1IYEVP_6OurwEvmDIQdNOBu1Z_EgUU_C_/embed?start=false&loop=false&delayms=3000"},
-                        {title: "Group By 2", ppt: "https://docs.google.com/presentation/d/1RQ_bUHcEyIoWQ_qg5LoPsY66enE5eSjP/embed?start=false&loop=false&delayms=3000"}
+                        {title: "Pemetaan ERD ke Physical Design dan ke Database", ppt: ""},
+                        {title: "DDL", ppt: ""},
+                        {title: "Serba Serbi Database", ppt: ""},
+                        {title: "Serba Serbi Database 2", ppt: ""},
+                        {title: "Select", ppt: ""},
+                        {title: "Where", ppt: ""},
+                        {title: "Join", ppt: ""},
+                        {title: "Fungsi Aggregat", ppt:""},
+                        {title: "Join 2", ppt: ""},
+                        {title: "Group By", ppt: ""},
+                        {title: "Group By 2", ppt: ""}
                     ],
-                    "Bahasa Indonesia": [],
-                    "Arsitektur Komputer": [],
-                    "Teori Graf": [],
-                    "Manajemen dan Kewirausahaan": []
+                    "Bahasa Indonesia": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Arsitektur Komputer": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Teori Graf": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Manajemen dan Kewirausahaan": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ]
                 }
             },
             3: {
@@ -88,6 +116,11 @@ let semester = 1;
                     "Analitik dan Visualisasi Data": [],
                     "Manajemen Keamanan Sistem Informasi": [],
                     "Pemrograman Berorientasi Obyek": []
+                }
+            },
+            4: {
+                courses: {
+                    "Belum dimasukin": [],
                 }
             }
         };
