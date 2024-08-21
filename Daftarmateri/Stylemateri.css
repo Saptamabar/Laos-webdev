@@ -9,7 +9,7 @@ body {
 }
 
 .sidebar {
-    background-color: #f1f1f1;
+    background-color: var(--secondary-color);
     padding: 20px;
     overflow-y: auto;
     width: 300px;
@@ -52,7 +52,7 @@ body {
 .semester-controls button {
     padding: 5px;
     cursor: pointer;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: var(--secondary-color);
     border: none;
     font-size: 16px;
@@ -61,7 +61,7 @@ body {
 }
 
 .semester-controls button:hover {
-    background-color: var(--accent-color);
+    background-color: var(--hover-color);
 }
 
 #courseButtons {
@@ -74,8 +74,9 @@ body {
     text-align: left;
     padding: 10px;
     cursor: pointer;
-    border: 1px solid var(--primary-color);
-    background-color: #f9f9f9;
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
     border-radius: 5px; /* Sudut membulat */
     transition: background-color 0.3s ease;
     font-family: "Poppins", sans-serif; /* Konsistensi font */
@@ -84,7 +85,7 @@ body {
 }
 
 #courseButtons button:hover {
-    background-color: var(--accent-color);
+    background-color: var(--hover-color);
     color: var(--secondary-color);
 }
 
@@ -109,7 +110,8 @@ body {
 }
 
 .topic-list li:hover {
-    background-color: #e0e0e0;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .main-content {

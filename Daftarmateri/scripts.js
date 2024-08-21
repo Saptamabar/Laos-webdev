@@ -108,19 +108,37 @@ let semester = 1;
             },
             3: {
                 courses: {
-                    "Metodologi Penelitian": [],
-                    "Riset Operasi": [],
-                    "Pengantar Kecerdasan Buatan": [],
-                    "Object Oriented Design": [],
-                    "Analisa dan Perancangan Sistem": [],
-                    "Analitik dan Visualisasi Data": [],
-                    "Manajemen Keamanan Sistem Informasi": [],
-                    "Pemrograman Berorientasi Obyek": []
+                    "Metodologi Penelitian": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Riset Operasi": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Pengantar Kecerdasan Buatan": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Object Oriented Design": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Analisa dan Perancangan Sistem": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Analitik dan Visualisasi Data": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Manajemen Keamanan Sistem Informasi": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
+                    "Pemrograman Berorientasi Obyek": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ]
                 }
             },
             4: {
                 courses: {
-                    "Belum dimasukin": [],
+                    "Belum dimasukin": [
+                        {title: "Coming soon", ppt: "https://docs.google.com/presentation/d/1vPtLx4pSW78Sns6iB3tLSuMbZ3Jl0GcsCaF2LwByy1w/embed?start=false&loop=false&delayms=3000"}
+                    ],
                 }
             }
         };
