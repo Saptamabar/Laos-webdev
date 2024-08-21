@@ -39,14 +39,15 @@ let semester = 1;
             2: {
                 courses: {
                     "Algoritma dan Pemrograman II": [
-                        {title: "Rekursif dan Palindrom", ppt: ""},
-                        {title: "Brute Force", ppt: ""},
-                        {title: "Searching", ppt: ""},
-                        {title: "Sorting", ppt: ""},
-                        {title: "Divide and Conquer", ppt: ""},
-                        {title: "Knapsack Problem", ppt: ""},
-                        {title: "Spanning Tree", ppt: ""},
-                        {title: "Maze Problem", ppt: ""}
+                        {title: "Rekursif", ppt: "https://docs.google.com/presentation/d/1HjGKJFi7fFdDomcp8XGNXNPcroaSE5bI/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Polindrom", ppt: "https://docs.google.com/presentation/d/1d97GWdyRKIZ4xCfz0A3JDbAMRNftdmkW/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Brute Force", ppt: "https://docs.google.com/presentation/d/1v5FCVIDso0KHFz_DcOdi5pQqT6Kd2oQf/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Searching", ppt: "https://docs.google.com/presentation/d/10oOrbVl0TcokZwtjq1t4ZH1nOpVxgQPO/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Sorting", ppt: "https://docs.google.com/presentation/d/115EHKNGxD1Bs5DkUb-kLhR-aEOhp5DIC/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Divide and Conquer", ppt: "https://docs.google.com/presentation/d/1Y5aOOxoz_LD8EBf_rnL6If5hzkv1MQuU_39c3Fk6H34/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Knapsack Problem", ppt: "https://docs.google.com/presentation/d/1W-Rw07Y5XyoWqlq-SkFToh0Z-6JaQGEQ/embed?start=false&loop=false&delayms=3000"},
+                        {title: "Spanning Tree", ppt: "https://docs.google.com/presentation/d/1Hy9z0rD7Q7olIo_c_BsPBhl5p4kwPgsI/embed?start=false&loop=false&delayms=3000"},
+                        {title: "BFS dan DFS", ppt: "https://docs.google.com/presentation/d/14Ptfn94dvttHnPZGLE86_r9RuVpV2yAy/embed?start=false&loop=false&delayms=3000"}
                     ],
                     "Pengantar Rekayasa Perangkat Lunak": [],
                     "Jaringan Komputer": [],
