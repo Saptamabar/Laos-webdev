@@ -1,5 +1,4 @@
 .container {
-    padding: 20px;
     max-width: 600px;
     margin: 20px auto;
 }
@@ -79,7 +78,7 @@ button:hover {
 .description {
     padding: 20px;
     max-width: 600px;
-    margin: 20px auto;
+    margin: 50px auto auto auto; 
     text-align: center;
     background-color: var(--secondary-color);
     color: var(--primary-color);
