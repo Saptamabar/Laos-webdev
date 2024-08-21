@@ -56,7 +56,7 @@ let semester = 1;
                         {title: "Menyimpan data dalam struktur tabel", ppt: "https://docs.google.com/presentation/d/e/2PACX-1vQCDHX6l2t9CxNMJO9KNzCuzPbOLOzkr2QJ57nCbYUnNoJYUomvKYSfqjf-nTA0bg/embed?start=false&loop=false&delayms=60000"},
                         {title: "Entity", ppt: "https://docs.google.com/presentation/d/e/2PACX-1vR4BnCfaULlcG6AFrrcHSjvQlVxeNr8-EgPqxl630oHy5sfKL8zCaRf9JnLAPF_RQ/embed?start=false&loop=false&delayms=3000"},
                         {title: "ERD 2", ppt: ""},
-                        {title: "Normalisasi", ppt: ""},
+                        {title: "Normalisasi", ppt: "skafn"},
                         {title: "DDL", ppt: ""},
                         {title: "Serba Serbi Database", ppt: ""},
                         {title: "Serba Serbi Database 2", ppt: ""},
